@@ -31,7 +31,7 @@ def scan_middware(data):
                 bssid_s = dot.addr3.upper()
                 essid_s = elt.info
                 if bssid_s not in wifi:  # 检查是否已经存在字典中，以免打印重复
-                    wifi[bssid]=essid_s
+                    wifi[bssid_s]=essid_s
                     if essid_s == "":  # 有些路由器会隐藏自己的ESSID
                         essid_s = "<hidden>"
                     print essid_s+": "+bssid_s
